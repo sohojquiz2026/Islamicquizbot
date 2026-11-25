@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>ইসলামিক কুইজ</title>
+    <!-- এখানে আপনার গুগল অ্যাডসেন্সের স্ক্রিপ্ট কোডটি বসাবেন -->
+</head>
+<body>
+    <h1>ইসলামিক কুইজ</h1>
+    <div id="quiz-container">
+        <p>প্রশ্ন ১: ইসলামের প্রথম স্তম্ভ কোনটি?</p>
+        <button onclick="checkAnswer('কালিমা')">কালিমা</button>
+        <button onclick="checkAnswer('নামায')">নামায</button>
+    </div>
+    <div id="response"></div>
+
+    <script>
+        function checkAnswer(answer) {
+            const responseDiv = document.getElementById('response');
+            if (answer === 'কালিমা') {
+                responseDiv.innerHTML = '<p>সঠিক উত্তর!</p>';
+            } else {
+                responseDiv.innerHTML = '<p>হয়নি, আবার চেষ্টা করুন।</p>';
+            }
+        }
+    </script>
+</body>
+</htm
